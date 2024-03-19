@@ -1,5 +1,4 @@
 package com.example.exerccio
-
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -25,22 +24,22 @@ class MainActivity : AppCompatActivity() {
 
                 if(etSenha.text.toString() == sysSenha)
                 {
-                    Toast.makeText(this, "Seja bem vindo" + etUsuario.text, Toast.LENGTH_LONG)
+                    Toast.makeText(this, "Seja bem vindo" + etUsuario.text, Toast.LENGTH_LONG).show()
                 }
                 else
                 {
-                    Toast.makeText(this, "Usuario ou senha invalidos", Toast.LENGTH_LONG)
+                    Toast.makeText(this, "Usuario ou senha invalidos", Toast.LENGTH_LONG).show()
                 }
             }
             else {
-                Toast.makeText(this, "digite o usuario e senha", Toast.LENGTH_LONG)
+                Toast.makeText(this, "digite o usuario e senha", Toast.LENGTH_LONG).show()
             }
 
             val btCadastrar: Button = findViewById<Button>(R.id.btCadastrar)
 
             btCadastrar.setOnClickListener()
             {
-                Toast.makeText(this, "digite o usuario e senha", Toast.LENGTH_LONG)
+                Toast.makeText(this, "digite o usuario e senha", Toast.LENGTH_LONG).show()
         }
 
         }
